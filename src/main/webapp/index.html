@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profesores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Profesores (Altas)</h1>
+        <form action="SvAltas" method="POST">
+            <p><label>Legajo: </label><input type="text" name="legajo"/></p>
+            <p><label>nombres: </label><input type="text" name="nombres"/></p>
+            <p><label>apellidos: </label><input type="text" name="apellidos"/></p>
+            <p><label>telefono: </label><input type="text" name="telefono"/></p>
+            <input type="submit" value="Enviar" name="enviar" />
+        </form>
+        
+        <h1>Ver lista de profesores</h1>
+        <p>Para ver el listado presione el botón</p>
+        <form action="SvAltas" method="GET">
+            <input type="submit" value="Listar Profesores" />
+        </form>
+        
+        <h1>Profesores (Bajas)</h1>
+        <p>Ingrese el id del profesor a eliminar</p>
+        <form action="SvBajas" method="POST">
+            <p><label>Id profesor: </label><input type="text" name="id_profesor"></p>
+            <input type="submit" value="Eliminar" />
+        </form>
+    </body>
+</html>
